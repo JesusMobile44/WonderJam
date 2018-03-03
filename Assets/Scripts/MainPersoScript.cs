@@ -22,7 +22,7 @@ public class MainPersoScript : MonoBehaviour {
         {
             if (testChaine[i]==' ')
             {
-                chaineModifie += ((char)(testChaine[i])).ToString();
+                chaineModifie += ((char)32).ToString();
             }
             else if (testChaine[i] > 96)
             {
@@ -40,14 +40,14 @@ public class MainPersoScript : MonoBehaviour {
 
         for (int i=0; i<testChaine.Length; i++)
         {
-            if (chaineModifie[i] == ' ')
+            if (testChaine[i] == ' ')
             {
                 GameObject go = GameObject.Instantiate(temp) as GameObject;
                 go.GetComponent<SpriteRenderer>().sprite = spritesLetters[26];
                 go.transform.position = new Vector2(deplacement, (float)0.39898);
                 deplacement++;
             }
-            else if (chaineModifie[i] > 96)
+            else if (testChaine[i] < 97)
             {
                 GameObject go = GameObject.Instantiate(temp) as GameObject;
                 go.GetComponent<SpriteRenderer>().sprite = spritesLetters[(int)(chaineModifie[i] - 97)];
@@ -57,7 +57,7 @@ public class MainPersoScript : MonoBehaviour {
             else if (testChaine[i] > 96)
             {
                 GameObject go = GameObject.Instantiate(temp) as GameObject;
-                go.GetComponent<SpriteRenderer>().sprite = spritesNumbers[(int)(testChaine[i] - 97)];
+                go.GetComponent<SpriteRenderer>().sprite = spritesNumbers[(int)(testChaine[i] - 96)];
                 go.transform.position = new Vector2(deplacement, (float)0.39898);
                 deplacement++;
             }
