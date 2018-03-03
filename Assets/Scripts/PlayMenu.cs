@@ -6,7 +6,7 @@ public class PlayMenu : MonoBehaviour {
 
     public void PlayGame1()
     {
-        SceneManager.LoadScene("Test");
+        SceneManager.LoadScene("Oui");
     }
     public void PlayGame2()
     {

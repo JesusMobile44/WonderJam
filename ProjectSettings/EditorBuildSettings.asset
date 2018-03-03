@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test.unity
     guid: 604d7f5a83f14cf4cafc6ce096419305
+  - enabled: 1
+    path: Assets/Scenes/Oui.unity
+    guid: d402f84af31abcc488cff51c031c2790
