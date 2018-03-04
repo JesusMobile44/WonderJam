@@ -12,12 +12,10 @@ public class MainPersoScript : MonoBehaviour {
     private string chaineModifie;
     private float deplacement = (float)-6.59;
     public GameObject UI_fin;
-    public bool start;
 
     // Use this for initialization
     void Start ()
     {
-        start = false;
         print(testChaine + "\n");
         print(position + "\n");
         for (int i = 0; i < testChaine.Length; i++)
@@ -39,31 +37,29 @@ public class MainPersoScript : MonoBehaviour {
 
         spritesLetters = Resources.LoadAll<Sprite>("Letters");
         spritesNumbers = Resources.LoadAll<Sprite>("Numbers");
-        if (start == true)
+
+        for (int i=0; i<testChaine.Length; i++)
         {
-            for (int i=0; i<testChaine.Length; i++)
+            if (testChaine[i] == ' ')
             {
-                if (testChaine[i] == ' ')
-                {
-                    GameObject go = GameObject.Instantiate(temp) as GameObject;
-                    go.GetComponent<SpriteRenderer>().sprite = spritesLetters[26];
-                    go.transform.position = new Vector2(deplacement, (float)0.39898);
-                    deplacement++;
-                }   
-                else if (testChaine[i] < 97)
-                {
-                    GameObject go = GameObject.Instantiate(temp) as GameObject;
-                    go.GetComponent<SpriteRenderer>().sprite = spritesLetters[(int)(chaineModifie[i] - 97)];
-                    go.transform.position = new Vector2(deplacement, (float)0.39898);
-                    deplacement++;
-                }
-                else if (testChaine[i] > 96)
-                {
-                    GameObject go = GameObject.Instantiate(temp) as GameObject;
-                    go.GetComponent<SpriteRenderer>().sprite = spritesNumbers[(int)(testChaine[i] - 96)];
-                    go.transform.position = new Vector2(deplacement, (float)0.39898);
-                    deplacement++;
-                }
+                GameObject go = GameObject.Instantiate(temp) as GameObject;
+                go.GetComponent<SpriteRenderer>().sprite = spritesLetters[26];
+                go.transform.position = new Vector2(deplacement, (float)0.39898);
+                deplacement++;
+            }
+            else if (testChaine[i] < 97)
+            {
+                GameObject go = GameObject.Instantiate(temp) as GameObject;
+                go.GetComponent<SpriteRenderer>().sprite = spritesLetters[(int)(chaineModifie[i] - 97)];
+                go.transform.position = new Vector2(deplacement, (float)0.39898);
+                deplacement++;
+            }
+            else if (testChaine[i] > 96)
+            {
+                GameObject go = GameObject.Instantiate(temp) as GameObject;
+                go.GetComponent<SpriteRenderer>().sprite = spritesNumbers[(int)(testChaine[i] - 96)];
+                go.transform.position = new Vector2(deplacement, (float)0.39898);
+                deplacement++;
             }
         }
     }
