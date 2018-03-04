@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.Audio;
 public class Volume : MonoBehaviour {
 
-    public AudioMixer audioMixer;
+    public AudioSource audioSource;
 
     public void setVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        //audioSource.SetFloat("volume", volume);
     }
 
 	

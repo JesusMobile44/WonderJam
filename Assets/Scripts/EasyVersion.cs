@@ -40,7 +40,6 @@ public class EasyVersion : MonoBehaviour
                 chaineModifie += ((char)(testChaine[i] + 1)).ToString();
             }
         }
-        print(chaineModifie);
 
         spritesLetters = Resources.LoadAll<Sprite>("Letters");
         spritesNumbers = Resources.LoadAll<Sprite>("Numbers");
@@ -224,7 +223,7 @@ public class EasyVersion : MonoBehaviour
         }
     }
 
-    void testEntree(char entree) //Méthode pour tester l'entrée, valide -> true, invalide -> false
+    void testEntree(char entree) //Méthode pour tester l'entrée
     {
         char[] texte = testChaine.ToCharArray();
 
@@ -233,8 +232,6 @@ public class EasyVersion : MonoBehaviour
             if (entree == texte[position])
             {
                 position++;
-                print(entree + " est entré\n");
-                print(position + "\n");
                 gameObject.transform.position = new Vector2(gameObject.transform.position.x + 1, gameObject.transform.position.y);
                 if (position == texte.Length)
                 {

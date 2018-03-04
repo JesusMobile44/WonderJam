@@ -291,6 +291,7 @@
     <Compile Include="Assets\CollideScript.cs" />
     <Compile Include="Assets\EndTrigger.cs" />
     <Compile Include="Assets\Scripts\AnimScript.cs" />
+    <Compile Include="Assets\Scripts\AudioScript.cs" />
     <Compile Include="Assets\Scripts\EasyVersion.cs" />
     <Compile Include="Assets\Scripts\Finnish.cs" />
     <Compile Include="Assets\Scripts\MainIA.cs" />

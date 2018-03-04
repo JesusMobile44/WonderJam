@@ -10,6 +10,6 @@ public class PlayMenu : MonoBehaviour {
     }
     public void PlayGame2()
     {
-        SceneManager.LoadScene("Scene2");
+        SceneManager.LoadScene("Non");
     }
 }

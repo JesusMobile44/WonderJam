@@ -11,8 +11,7 @@ public class MainPersoScript2 : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        print(testChaine + "\n");
-        print(position + "\n");
+     
 	}
 	
 	// Update is called once per frame
@@ -164,12 +163,9 @@ public class MainPersoScript2 : MonoBehaviour {
             if (entree == texte[position])
             {
                 position++;
-                print(entree + " est entré\n");
-                print(position + "\n");
                 gameObject.transform.position = new Vector2(gameObject.transform.position.x + 0.5f, gameObject.transform.position.y);
             }
-            else if (entree != texte[position])
-                print("mauvaise entrée\n");
+            //else if (entree != texte[position])
         }
         else if (position == texte.Length - 1)
         {
