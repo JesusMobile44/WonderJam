@@ -997,6 +997,14 @@ Prefab:
       propertyPath: UI_fin
       value: 
       objectReference: {fileID: 1544236807}
+    - target: {fileID: 4685499921889954, guid: 453429c6b93ece544b74ba6a7cb32098, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685499921889954, guid: 453429c6b93ece544b74ba6a7cb32098, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114869805838187540, guid: 453429c6b93ece544b74ba6a7cb32098, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 453429c6b93ece544b74ba6a7cb32098, type: 2}
@@ -3751,6 +3759,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9464adb89e1128743976deaa2ecc003b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spr_horseSpriteSheet_5: {fileID: 0}
+  spr_horseSpriteSheet_9: {fileID: 0}
+  spr_horseSpriteSheet_13: {fileID: 0}
+  go: {fileID: 0}
+  number_1: {fileID: 0}
+  number_2: {fileID: 0}
+  number_3: {fileID: 0}
 --- !u!1 &1819327283
 GameObject:
   m_ObjectHideFlags: 0

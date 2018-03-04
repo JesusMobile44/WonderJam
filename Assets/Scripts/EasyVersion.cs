@@ -18,8 +18,6 @@ public class EasyVersion : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        print(testChaine + "\n");
-        print(position + "\n");
         int randomNumber = Random.Range(0, 11);
         testChaine = tabChaine[randomNumber];
         textHehe.text += testChaine;
@@ -241,8 +239,6 @@ public class EasyVersion : MonoBehaviour
                 if (position == texte.Length)
                 {
                     UI_fin.gameObject.SetActive(true);
-                    print("Victoire!");
-                    print(gameObject.transform.position.x);
                 }
             }
             else if (entree != texte[position]) print("mauvaise entrée\n");
