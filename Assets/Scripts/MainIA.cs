@@ -5,8 +5,7 @@ using UnityEngine;
 public class MainIA : MonoBehaviour
 {
 
-    public float chance;
-
+    public float speed;
     private static System.Random rnd = new System.Random();
     private Vector2 movement = new Vector2(0.0001f, 0);
 
@@ -14,7 +13,7 @@ public class MainIA : MonoBehaviour
     private void Update()
     {
         float randomFloat = (float) rnd.NextDouble() * (0.01f - 0.0001f) + 0.0001f;
-        movement = new Vector2(randomFloat, 0);
+        movement = new Vector2(randomFloat*speed*Time.deltaTime, 0);
         gameObject.transform.Translate(movement);
     }
 }
