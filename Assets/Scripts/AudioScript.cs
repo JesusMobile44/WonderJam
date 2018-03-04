@@ -18,6 +18,7 @@ public class AudioScript : MonoBehaviour {
 		if (play && toggleChange)
         {
             audioSource.Play();
+            toggleChange = false;
         }
 	}
 }

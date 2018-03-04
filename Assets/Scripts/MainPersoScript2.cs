@@ -170,8 +170,6 @@ public class MainPersoScript2 : MonoBehaviour {
         else if (position == texte.Length - 1)
         {
             UI_fin.gameObject.SetActive(true);
-            //print("Victoire!");
-            //print(gameObject.transform.position.x);
         }
     }
 }
