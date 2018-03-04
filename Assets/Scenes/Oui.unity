@@ -1652,7 +1652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a70772ada8c444da37fd6c9d674cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chance: 0
+  speed: 100
 --- !u!212 &734666064
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3084,7 +3084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a70772ada8c444da37fd6c9d674cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chance: 0
+  speed: 100
 --- !u!212 &1369767402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3641,7 +3641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a70772ada8c444da37fd6c9d674cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chance: 0
+  speed: 100
 --- !u!212 &1602865356
 SpriteRenderer:
   m_ObjectHideFlags: 0
