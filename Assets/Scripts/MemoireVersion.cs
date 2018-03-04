@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MemoireVersion : MonoBehaviour {
 
-    public string testChaine = "";
+    private string testChaine = "";
+    private string[] tabChaine = { "il me juge digne de ce travail car je le fais minutieusement", "quand midi sonna les cowboys sortirent leurs revolvers noirs", "programmer avec unity est une activite qui est tres amusante", "je regarde les constellations dans le ciel pour me retrouver", "cette chaine de caractere est beaucoup trop longue pour rien", "ce cactus a pris vraiment beaucoup trop de temps a modeliser", "ingurgiter trop de rockstar peut etre une tres mauvaise idee", "de la surface lunaire on peut apercevoir de loin notre terre", "il est plus difficile que vous pensez de trouver des phrases", "les tutoriels youtube nous ont bien franchement sauve la vie" };
     public GameObject temp;
     private int isitok;
     private float Range;
@@ -18,10 +20,15 @@ public class MemoireVersion : MonoBehaviour {
     private bool[] done= {false,false,false,false};
     private string chaineFinale = "";
     private string subChaine = "";
+    public Text textHehe;
+    public Sprite equalSprite;
 
     // Use this for initialization
     void Start()
     {
+        int randomNumber = Random.Range(0, 11);
+        testChaine = tabChaine[randomNumber];
+        textHehe.text += testChaine;
         print(testChaine + "\n");
         print(position + "\n");
 
@@ -266,6 +273,46 @@ public class MemoireVersion : MonoBehaviour {
 
             for (int i = 0; i < subChaine.Length; i++)
             {
+                if (i == 0)
+                {
+                    print("oui");
+                    if (true)
+                    {
+                        GameObject go = GameObject.Instantiate(temp) as GameObject;
+                        go.GetComponent<SpriteRenderer>().sprite = spritesLetters[(int)(lettres[0] - 97)];
+                        go.transform.position = new Vector2(deplacement - 1, (float)-1.39898);
+                    }
+                    if (true)
+                    {
+                        GameObject go = GameObject.Instantiate(temp) as GameObject;
+                        go.GetComponent<SpriteRenderer>().sprite = equalSprite;
+                        go.transform.position = new Vector2(deplacement, (float)-1.85);
+                    }
+                    if (true)
+                    {
+                        GameObject go = GameObject.Instantiate(temp) as GameObject;
+                        go.GetComponent<SpriteRenderer>().sprite = spritesLetters[(int)(lettres[1] - 97)];
+                        go.transform.position = new Vector2(deplacement + 1, (float)-1.39898);
+                    }
+                    if (true)
+                    {
+                        GameObject go = GameObject.Instantiate(temp) as GameObject;
+                        go.GetComponent<SpriteRenderer>().sprite = spritesLetters[(int)(lettres[2] - 97)];
+                        go.transform.position = new Vector2(deplacement - 1, (float)4.39898);
+                    }
+                    if (true)
+                    {
+                        GameObject go = GameObject.Instantiate(temp) as GameObject;
+                        go.GetComponent<SpriteRenderer>().sprite = equalSprite;
+                        go.transform.position = new Vector2(deplacement, (float)4.15);
+                    }
+                    if (true)
+                    {
+                        GameObject go = GameObject.Instantiate(temp) as GameObject;
+                        go.GetComponent<SpriteRenderer>().sprite = spritesLetters[(int)(lettres[3] - 97)];
+                        go.transform.position = new Vector2(deplacement + 1, (float)4.39898);
+                    }
+                }
                 if (chaineModifie[i] == ' ')
                 {
                     GameObject go = GameObject.Instantiate(temp) as GameObject;
