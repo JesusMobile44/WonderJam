@@ -13,6 +13,10 @@ public class MainPersoScript : MonoBehaviour {
     private string chaineModifie;
     private float deplacement = (float)-6.59;
     public GameObject UI_fin;
+    public GameObject image;
+    /*public GameObject cheval1;
+    public GameObject cheval2;
+    public GameObject cheval3;*/
 
     // Use this for initialization
     void Start ()
@@ -232,12 +236,16 @@ public class MainPersoScript : MonoBehaviour {
                 gameObject.transform.position = new Vector2(gameObject.transform.position.x + 1, gameObject.transform.position.y);
                 if (position == texte.Length)
                 {
-                    UI_fin.gameObject.SetActive(true);
-                    print("Victoire!");
-                    print(gameObject.transform.position.x);
+                    if (image.activeSelf == false)
+                    {
+                        UI_fin.gameObject.SetActive(true);
+                        print("Victoire!");
+                        print(gameObject.transform.position.x);
+                    }
                 }
             }
             else if (entree != texte[position]) print("mauvaise entrée\n");
         }
+        //else if (position >= testChaine.Length && GameObject.Find("Cheval1") > Vector2(54f,0f)
     }
 }

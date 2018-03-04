@@ -288,6 +288,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EndTrigger.cs" />
     <Compile Include="Assets\Scripts\AnimScript.cs" />
     <Compile Include="Assets\Scripts\EasyVersion.cs" />
     <Compile Include="Assets\Scripts\Finnish.cs" />
