@@ -2210,7 +2210,7 @@ GameObject:
   - component: {fileID: 1982492355}
   - component: {fileID: 1982492354}
   - component: {fileID: 1982492353}
-  - component: {fileID: 1982492352}
+  - component: {fileID: 1982492349}
   - component: {fileID: 1982492351}
   - component: {fileID: 1982492350}
   m_Layer: 0
@@ -2220,6 +2220,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1982492349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1982492348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1747a3de7e53ac42998ed3548e5926b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testChaine: bonjour a tous mon nom est dekatator
+  temp: {fileID: 1597276314}
+  UI_fin: {fileID: 1544236807}
 --- !u!95 &1982492350
 Animator:
   serializedVersion: 3
@@ -2245,21 +2259,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1982492348}
---- !u!114 &1982492352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114697762019759960, guid: 75a9fda959291b74aade18c3f54d215a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1982492348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1747a3de7e53ac42998ed3548e5926b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testChaine: bonjour a tous mon nom est dekatator
-  temp: {fileID: 1597276314}
-  UI_fin: {fileID: 1544236807}
 --- !u!61 &1982492353
 BoxCollider2D:
   m_ObjectHideFlags: 0
