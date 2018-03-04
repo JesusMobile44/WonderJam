@@ -4,7 +4,8 @@ using UnityEngine.UI;
 
 public class MainPersoScript : MonoBehaviour {
 
-    public string testChaine = "";
+    private string testChaine = "";
+    private string[] tabChaine = { "il me juge digne de ce travail car je le fais minutieusement", "quand midi sonna les cowboys sortirent leurs revolvers noirs", "programmer avec unity est une activite qui est tres amusante", "je regarde les constellations dans le ciel pour me retrouver", "cette chaine de caractere est beaucoup trop longue pour rien", "ce cactus a pris vraiment beaucoup trop de temps a modeliser", "ingurgiter trop de rockstar peut etre une tres mauvaise idee", "de la surface lunaire on peut apercevoir de loin notre terre", "il est plus difficile que vous pensez de trouver des phrases", "les tutoriels youtube nous ont bien franchement sauve la vie" };
     public GameObject temp;
     private Sprite[] spritesLetters;
     private Sprite[] spritesNumbers;
@@ -16,8 +17,8 @@ public class MainPersoScript : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        print(testChaine + "\n");
-        print(position + "\n");
+        int randomNumber = Random.Range(0, 11);
+        testChaine = tabChaine[randomNumber];
         for (int i = 0; i < testChaine.Length; i++)
         {
             if (testChaine[i]==' ')
