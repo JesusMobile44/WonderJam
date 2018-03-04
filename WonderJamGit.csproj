@@ -289,11 +289,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AnimScript.cs" />
+    <Compile Include="Assets\Scripts\EasyVersion.cs" />
     <Compile Include="Assets\Scripts\Finnish.cs" />
     <Compile Include="Assets\Scripts\MainIA.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MainPersoScript.cs" />
     <Compile Include="Assets\Scripts\MainPersoScript2.cs" />
+    <Compile Include="Assets\Scripts\MemoireVersion.cs" />
     <Compile Include="Assets\Scripts\PlayMenu.cs" />
     <Compile Include="Assets\Scripts\Volume.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
