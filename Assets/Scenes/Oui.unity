@@ -4386,7 +4386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1747a3de7e53ac42998ed3548e5926b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testChaine: zzzzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
   temp: {fileID: 1597276314}
   UI_fin: {fileID: 1544236807}
 --- !u!61 &1982492353
